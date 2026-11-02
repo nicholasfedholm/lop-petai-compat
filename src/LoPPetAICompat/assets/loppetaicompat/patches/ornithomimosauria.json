@@ -1,0 +1,291 @@
+[
+  {
+    "op": "add",
+    "path": "/client/behaviors/-",
+    "value": {
+      "code": "nametag",
+      "showtagonlywhentargeted": true
+    },
+    "file": "ornithomimosauria:entities/land/ornithomimosauria.json",
+    "side": "Universal",
+    "dependsOn": [
+      {
+        "modid": "ornithomimosauria"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/client/behaviors/-",
+    "value": {
+      "code": "loptameable",
+      "size": "large",
+      "disobediencePerDay": 0
+    },
+    "file": "ornithomimosauria:entities/land/ornithomimosauria.json",
+    "side": "Universal",
+    "dependsOn": [
+      {
+        "modid": "ornithomimosauria"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/client/behaviors/-",
+    "value": {
+      "code": "receivecommand",
+      "availableCommands": [
+        {
+          "commandName": "followmaster",
+          "commandType": "COMPLEX",
+          "minObedience": 0
+        },
+        {
+          "commandName": "stay",
+          "commandType": "COMPLEX",
+          "minObedience": 0
+        },
+        {
+          "commandName": "sit",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        },
+        {
+          "commandName": "lay",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        },
+        {
+          "commandName": "speak",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        }
+      ]
+    },
+    "file": "ornithomimosauria:entities/land/ornithomimosauria.json",
+    "side": "Universal",
+    "dependsOn": [
+      {
+        "modid": "ornithomimosauria"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/-",
+    "value": {
+      "code": "nametag",
+      "showtagonlywhentargeted": true
+    },
+    "file": "ornithomimosauria:entities/land/ornithomimosauria.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "ornithomimosauria"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/-",
+    "value": {
+      "code": "loptameable",
+      "size": "large",
+      "disobediencePerDay": 0
+    },
+    "file": "ornithomimosauria:entities/land/ornithomimosauria.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "ornithomimosauria"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/-",
+    "value": {
+      "code": "receivecommand",
+      "availableCommands": [
+        {
+          "commandName": "followmaster",
+          "commandType": "COMPLEX",
+          "minObedience": 0
+        },
+        {
+          "commandName": "stay",
+          "commandType": "COMPLEX",
+          "minObedience": 0
+        },
+        {
+          "commandName": "sit",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        },
+        {
+          "commandName": "lay",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        },
+        {
+          "commandName": "speak",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        }
+      ]
+    },
+    "file": "ornithomimosauria:entities/land/ornithomimosauria.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "ornithomimosauria"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/17/aitasks/-",
+    "value": {
+      "code": "followmaster",
+      "command": "followmaster",
+      "priority": 2.1,
+      "animation": "Run",
+      "maxDistance": 10,
+      "searchRange": 50,
+      "allowTeleport": true,
+      "teleportAfterRange": 40,
+      "movespeedByType": {
+        "*-baby-*": 0.01,
+        "*-deinocheirus-adult-*": 0.035,
+        "*-paraxenisaurus-adult-*": 0.0455,
+        "*-gallimimus-adult-*": 0.0793,
+        "*-dzharacursor-adult-*": 0.0817,
+        "*-garudimimus-adult-*": 0.084,
+        "*-sinornithomimus-adult-*": 0.0849,
+        "*-struthiomimus-adult-*": 0.0849,
+        "*-ornithomimus-adult-*": 0.0849,
+        "*-dromiceiomimus-adult-*": 0.0863,
+        "*-kinnareemimus-adult-*": 0.0863,
+        "*-tyrannomimus-adult-*": 0.0863,
+        "*-harpymimus-adult-*": 0.0887,
+        "*-pelecanimimus-adult-*": 0.0887,
+        "*-nqwebasaurus-adult-*": 0.0898
+      },
+      "animationSpeedByType": {
+        "*-baby-*": 1.5,
+        "*-deinocheirus-adult-*": 1.5,
+        "*-paraxenisaurus-adult-*": 1.5,
+        "*": 2
+      }
+    },
+    "file": "ornithomimosauria:entities/land/ornithomimosauria.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "ornithomimosauria"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/17/aitasks/-",
+    "value": {
+      "code": "stay",
+      "command": "stay",
+      "priority": 2.05,
+      "priorityForCancel": 1.85,
+      "animation": "Walk",
+      "maxdistance": 6,
+      "searchRange": 50,
+      "movespeedByType": {
+        "*-baby-*": 0.0012,
+        "*-deinocheirus-adult-*": 0.02,
+        "*-paraxenisaurus-adult-*": 0.0176,
+        "*-gallimimus-adult-*": 0.0168,
+        "*-dzharacursor-adult-*": 0.016,
+        "*-garudimimus-adult-*": 0.0152,
+        "*-sinornithomimus-adult-*": 0.0149,
+        "*-struthiomimus-adult-*": 0.0149,
+        "*-ornithomimus-adult-*": 0.0149,
+        "*-dromiceiomimus-adult-*": 0.0144,
+        "*-kinnareemimus-adult-*": 0.0144,
+        "*-tyrannomimus-adult-*": 0.0144,
+        "*-harpymimus-adult-*": 0.0136,
+        "*-pelecanimimus-adult-*": 0.0136,
+        "*-nqwebasaurus-adult-*": 0.0132
+      },
+      "animationSpeedByType": {
+        "*-baby-*": 1,
+        "*-adult-*": 1
+      }
+    },
+    "file": "ornithomimosauria:entities/land/ornithomimosauria.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "ornithomimosauria"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/17/aitasks/-",
+    "value": {
+      "code": "simplecommand",
+      "command": "sit",
+      "priority": 2.2,
+      "priorityForCancel": 1.85,
+      "minduration": 10000,
+      "maxduration": 30000,
+      "animation": "Sit"
+    },
+    "file": "ornithomimosauria:entities/land/ornithomimosauria.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "ornithomimosauria"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/17/aitasks/-",
+    "value": {
+      "code": "simplecommand",
+      "command": "lay",
+      "priority": 2.2,
+      "priorityForCancel": 1.85,
+      "minduration": 30000,
+      "maxduration": 120000,
+      "animation": "Lie"
+    },
+    "file": "ornithomimosauria:entities/land/ornithomimosauria.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "ornithomimosauria"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/17/aitasks/-",
+    "value": {
+      "code": "simplecommand",
+      "command": "speak",
+      "priority": 2.2,
+      "priorityForCancel": 1.85,
+      "minduration": 3000,
+      "maxduration": 3000,
+      "animation": "Roar"
+    },
+    "file": "ornithomimosauria:entities/land/ornithomimosauria.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "ornithomimosauria"
+      }
+    ]
+  }
+]

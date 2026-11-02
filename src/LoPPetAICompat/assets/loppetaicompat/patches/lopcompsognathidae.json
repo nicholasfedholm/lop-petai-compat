@@ -1,0 +1,267 @@
+[
+  {
+    "op": "add",
+    "path": "/client/behaviors/-",
+    "value": {
+      "code": "nametag",
+      "showtagonlywhentargeted": true
+    },
+    "file": "lopcompsognathidae:entities/land/compsognathidae.json",
+    "side": "Universal",
+    "dependsOn": [
+      {
+        "modid": "lopcompsognathidae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/client/behaviors/-",
+    "value": {
+      "code": "loptameable",
+      "size": "large",
+      "disobediencePerDay": 0
+    },
+    "file": "lopcompsognathidae:entities/land/compsognathidae.json",
+    "side": "Universal",
+    "dependsOn": [
+      {
+        "modid": "lopcompsognathidae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/client/behaviors/-",
+    "value": {
+      "code": "receivecommand",
+      "availableCommands": [
+        {
+          "commandName": "followmaster",
+          "commandType": "COMPLEX",
+          "minObedience": 0
+        },
+        {
+          "commandName": "stay",
+          "commandType": "COMPLEX",
+          "minObedience": 0
+        },
+        {
+          "commandName": "sit",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        },
+        {
+          "commandName": "lay",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        },
+        {
+          "commandName": "speak",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        }
+      ]
+    },
+    "file": "lopcompsognathidae:entities/land/compsognathidae.json",
+    "side": "Universal",
+    "dependsOn": [
+      {
+        "modid": "lopcompsognathidae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/-",
+    "value": {
+      "code": "nametag",
+      "showtagonlywhentargeted": true
+    },
+    "file": "lopcompsognathidae:entities/land/compsognathidae.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "lopcompsognathidae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/-",
+    "value": {
+      "code": "loptameable",
+      "size": "large",
+      "disobediencePerDay": 0
+    },
+    "file": "lopcompsognathidae:entities/land/compsognathidae.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "lopcompsognathidae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/-",
+    "value": {
+      "code": "receivecommand",
+      "availableCommands": [
+        {
+          "commandName": "followmaster",
+          "commandType": "COMPLEX",
+          "minObedience": 0
+        },
+        {
+          "commandName": "stay",
+          "commandType": "COMPLEX",
+          "minObedience": 0
+        },
+        {
+          "commandName": "sit",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        },
+        {
+          "commandName": "lay",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        },
+        {
+          "commandName": "speak",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        }
+      ]
+    },
+    "file": "lopcompsognathidae:entities/land/compsognathidae.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "lopcompsognathidae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/14/aitasks/-",
+    "value": {
+      "code": "followmaster",
+      "command": "followmaster",
+      "priority": 2.1,
+      "animation": "Run",
+      "maxDistance": 10,
+      "searchRange": 50,
+      "allowTeleport": true,
+      "teleportAfterRange": 40,
+      "movespeedByType": {
+        "*-baby-*": 0.035,
+        "*-compsognathus-adult-*": 0.07,
+        "*-sinosauropteryx-adult-*": 0.07
+      },
+      "animationSpeedByType": {
+        "*-baby-*": 2.5,
+        "*-compsognathus-adult-*": 3.25,
+        "*-sinosauropteryx-adult-*": 3.25
+      }
+    },
+    "file": "lopcompsognathidae:entities/land/compsognathidae.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "lopcompsognathidae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/14/aitasks/-",
+    "value": {
+      "code": "stay",
+      "command": "stay",
+      "priority": 2.05,
+      "priorityForCancel": 1.85,
+      "animation": "Walk",
+      "maxdistance": 6,
+      "searchRange": 50,
+      "movespeedByType": {
+        "*-baby-*": 0.004,
+        "*-compsognathus-adult-*": 0.008,
+        "*-sinosauropteryx-adult-*": 0.006
+      },
+      "animationSpeedByType": {
+        "*-baby-*": 2.25,
+        "*-compsognathus-adult-*": 1.0,
+        "*-sinosauropteryx-adult-*": 1.0
+      }
+    },
+    "file": "lopcompsognathidae:entities/land/compsognathidae.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "lopcompsognathidae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/14/aitasks/-",
+    "value": {
+      "code": "simplecommand",
+      "command": "sit",
+      "priority": 2.2,
+      "priorityForCancel": 1.85,
+      "minduration": 10000,
+      "maxduration": 30000,
+      "animation": "Sit"
+    },
+    "file": "lopcompsognathidae:entities/land/compsognathidae.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "lopcompsognathidae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/14/aitasks/-",
+    "value": {
+      "code": "simplecommand",
+      "command": "lay",
+      "priority": 2.2,
+      "priorityForCancel": 1.85,
+      "minduration": 30000,
+      "maxduration": 120000,
+      "animation": "Lie"
+    },
+    "file": "lopcompsognathidae:entities/land/compsognathidae.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "lopcompsognathidae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/14/aitasks/-",
+    "value": {
+      "code": "simplecommand",
+      "command": "speak",
+      "priority": 2.2,
+      "priorityForCancel": 1.85,
+      "minduration": 3000,
+      "maxduration": 3000,
+      "animation": "Roar"
+    },
+    "file": "lopcompsognathidae:entities/land/compsognathidae.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "lopcompsognathidae"
+      }
+    ]
+  }
+]

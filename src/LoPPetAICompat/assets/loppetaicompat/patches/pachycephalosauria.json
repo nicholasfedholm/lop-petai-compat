@@ -1,0 +1,293 @@
+[
+  {
+    "op": "add",
+    "path": "/client/behaviors/-",
+    "value": {
+      "code": "nametag",
+      "showtagonlywhentargeted": true
+    },
+    "file": "pachycephalosauria:entities/land/pachycephalosauria.json",
+    "side": "Universal",
+    "dependsOn": [
+      {
+        "modid": "pachycephalosauria"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/client/behaviors/-",
+    "value": {
+      "code": "loptameable",
+      "size": "large",
+      "disobediencePerDay": 0
+    },
+    "file": "pachycephalosauria:entities/land/pachycephalosauria.json",
+    "side": "Universal",
+    "dependsOn": [
+      {
+        "modid": "pachycephalosauria"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/client/behaviors/-",
+    "value": {
+      "code": "receivecommand",
+      "availableCommands": [
+        {
+          "commandName": "followmaster",
+          "commandType": "COMPLEX",
+          "minObedience": 0
+        },
+        {
+          "commandName": "stay",
+          "commandType": "COMPLEX",
+          "minObedience": 0
+        },
+        {
+          "commandName": "sit",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        },
+        {
+          "commandName": "lay",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        },
+        {
+          "commandName": "speak",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        }
+      ]
+    },
+    "file": "pachycephalosauria:entities/land/pachycephalosauria.json",
+    "side": "Universal",
+    "dependsOn": [
+      {
+        "modid": "pachycephalosauria"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/-",
+    "value": {
+      "code": "nametag",
+      "showtagonlywhentargeted": true
+    },
+    "file": "pachycephalosauria:entities/land/pachycephalosauria.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "pachycephalosauria"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/-",
+    "value": {
+      "code": "loptameable",
+      "size": "large",
+      "disobediencePerDay": 0
+    },
+    "file": "pachycephalosauria:entities/land/pachycephalosauria.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "pachycephalosauria"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/-",
+    "value": {
+      "code": "receivecommand",
+      "availableCommands": [
+        {
+          "commandName": "followmaster",
+          "commandType": "COMPLEX",
+          "minObedience": 0
+        },
+        {
+          "commandName": "stay",
+          "commandType": "COMPLEX",
+          "minObedience": 0
+        },
+        {
+          "commandName": "sit",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        },
+        {
+          "commandName": "lay",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        },
+        {
+          "commandName": "speak",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        }
+      ]
+    },
+    "file": "pachycephalosauria:entities/land/pachycephalosauria.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "pachycephalosauria"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/17/aitasks/-",
+    "value": {
+      "code": "followmaster",
+      "command": "followmaster",
+      "priority": 2.1,
+      "animation": "Run",
+      "maxDistance": 10,
+      "searchRange": 50,
+      "allowTeleport": true,
+      "teleportAfterRange": 40,
+      "movespeedByType": {
+        "*-baby-*": 0.01,
+        "*-pachycephalosaurus-adult-*": 0.06,
+        "*-platytholus-adult-*": 0.0524,
+        "*-prenocephale-adult-*": 0.0492,
+        "*-stegoceras-adult-*": 0.0504,
+        "*-hanssuesia-adult-*": 0.0488,
+        "*-sinocephale-adult-*": 0.0488,
+        "*-sphaerotholus-adult-*": 0.0484,
+        "*-tylocephale-adult-*": 0.0484,
+        "*-homalocephale-adult-*": 0.0476,
+        "*-acrotholus-adult-*": 0.0476,
+        "*-goyocephale-adult-*": 0.0462,
+        "*-foraminacephale-adult-*": 0.0462,
+        "*-alaskacephale-adult-*": 0.0462,
+        "*-colepiocephale-adult-*": 0.0442,
+        "*-amtocephale-adult-*": 0.0442,
+        "*-wannanosaurus-adult-*": 0.0424
+      },
+      "animationSpeedByType": {
+        "*-baby-*": 3,
+        "*": 4.0
+      }
+    },
+    "file": "pachycephalosauria:entities/land/pachycephalosauria.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "pachycephalosauria"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/17/aitasks/-",
+    "value": {
+      "code": "stay",
+      "command": "stay",
+      "priority": 2.05,
+      "priorityForCancel": 1.85,
+      "animation": "Walk",
+      "maxdistance": 6,
+      "searchRange": 50,
+      "movespeedByType": {
+        "*-baby-*": 0.0012,
+        "*-pachycephalosaurus-adult-*": 0.01,
+        "*-platytholus-adult-*": 0.0062,
+        "*-prenocephale-adult-*": 0.0046,
+        "*-stegoceras-adult-*": 0.0052,
+        "*-hanssuesia-adult-*": 0.0044,
+        "*-sinocephale-adult-*": 0.0044,
+        "*-sphaerotholus-adult-*": 0.0042,
+        "*-tylocephale-adult-*": 0.0042,
+        "*-homalocephale-adult-*": 0.0038,
+        "*-acrotholus-adult-*": 0.0038,
+        "*-goyocephale-adult-*": 0.0031,
+        "*-foraminacephale-adult-*": 0.0031,
+        "*-alaskacephale-adult-*": 0.0031,
+        "*-colepiocephale-adult-*": 0.0021,
+        "*-amtocephale-adult-*": 0.0021,
+        "*-wannanosaurus-adult-*": 0.0012
+      },
+      "animationSpeedByType": {
+        "*-baby-*": 1,
+        "*-adult-*": 1
+      }
+    },
+    "file": "pachycephalosauria:entities/land/pachycephalosauria.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "pachycephalosauria"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/17/aitasks/-",
+    "value": {
+      "code": "simplecommand",
+      "command": "sit",
+      "priority": 2.2,
+      "priorityForCancel": 1.85,
+      "minduration": 10000,
+      "maxduration": 30000,
+      "animation": "Sit"
+    },
+    "file": "pachycephalosauria:entities/land/pachycephalosauria.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "pachycephalosauria"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/17/aitasks/-",
+    "value": {
+      "code": "simplecommand",
+      "command": "lay",
+      "priority": 2.2,
+      "priorityForCancel": 1.85,
+      "minduration": 30000,
+      "maxduration": 120000,
+      "animation": "Lie"
+    },
+    "file": "pachycephalosauria:entities/land/pachycephalosauria.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "pachycephalosauria"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/17/aitasks/-",
+    "value": {
+      "code": "simplecommand",
+      "command": "speak",
+      "priority": 2.2,
+      "priorityForCancel": 1.85,
+      "minduration": 3000,
+      "maxduration": 3000,
+      "animation": "Roar"
+    },
+    "file": "pachycephalosauria:entities/land/pachycephalosauria.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "pachycephalosauria"
+      }
+    ]
+  }
+]

@@ -1,0 +1,212 @@
+[
+  {
+    "op": "add",
+    "path": "/client/behaviors/-",
+    "value": {
+      "code": "nametag",
+      "showtagonlywhentargeted": true
+    },
+    "file": "loppterosauria:entities/land/pterosauria.json",
+    "side": "Universal",
+    "dependsOn": [
+      {
+        "modid": "loppterosauria"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/client/behaviors/-",
+    "value": {
+      "code": "loptameable",
+      "size": "large",
+      "disobediencePerDay": 0
+    },
+    "file": "loppterosauria:entities/land/pterosauria.json",
+    "side": "Universal",
+    "dependsOn": [
+      {
+        "modid": "loppterosauria"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/client/behaviors/-",
+    "value": {
+      "code": "receivecommand",
+      "availableCommands": [
+        {
+          "commandName": "stay",
+          "commandType": "COMPLEX",
+          "minObedience": 0
+        },
+        {
+          "commandName": "sit",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        },
+        {
+          "commandName": "speak",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        }
+      ]
+    },
+    "file": "loppterosauria:entities/land/pterosauria.json",
+    "side": "Universal",
+    "dependsOn": [
+      {
+        "modid": "loppterosauria"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/-",
+    "value": {
+      "code": "nametag",
+      "showtagonlywhentargeted": true
+    },
+    "file": "loppterosauria:entities/land/pterosauria.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "loppterosauria"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/-",
+    "value": {
+      "code": "loptameable",
+      "size": "large",
+      "disobediencePerDay": 0
+    },
+    "file": "loppterosauria:entities/land/pterosauria.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "loppterosauria"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/-",
+    "value": {
+      "code": "receivecommand",
+      "availableCommands": [
+        {
+          "commandName": "stay",
+          "commandType": "COMPLEX",
+          "minObedience": 0
+        },
+        {
+          "commandName": "sit",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        },
+        {
+          "commandName": "speak",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        }
+      ]
+    },
+    "file": "loppterosauria:entities/land/pterosauria.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "loppterosauria"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/14/aitasks/-",
+    "value": {
+      "code": "stay",
+      "command": "stay",
+      "priority": 2.05,
+      "priorityForCancel": 1.85,
+      "animation": "walk",
+      "maxdistance": 6,
+      "searchRange": 50,
+      "movespeedByType": {
+        "*-quetzalcoatlus-adult-male": 0.014,
+        "*-quetzalcoatlus-adult-female": 0.014,
+        "*-quetzalcoatlus-baby-*": 0.006,
+        "*-pteranodon-adult-male": 0.011,
+        "*-pteranodon-adult-female": 0.011,
+        "*-pteranodon-baby-*": 0.005,
+        "*-tapejara-adult-male": 0.01,
+        "*-tapejara-adult-female": 0.01,
+        "*-tapejara-baby-*": 0.0045,
+        "*-nyctosaurus-adult-male": 0.008,
+        "*-nyctosaurus-adult-female": 0.008,
+        "*-nyctosaurus-baby-*": 0.004,
+        "*-pterodaustro-adult-male": 0.009,
+        "*-pterodaustro-adult-female": 0.009,
+        "*-pterodaustro-baby-*": 0.0045,
+        "*-dimorphodon-adult-male": 0.01,
+        "*-dimorphodon-adult-female": 0.01,
+        "*-dimorphodon-baby-*": 0.005,
+        "*-rhamphorhynchus-adult-male": 0.008,
+        "*-rhamphorhynchus-adult-female": 0.008,
+        "*-rhamphorhynchus-baby-*": 0.004,
+        "*-hatzegopteryx-adult-male": 0.016,
+        "*-hatzegopteryx-adult-female": 0.016,
+        "*-hatzegopteryx-baby-*": 0.0065
+      }
+    },
+    "file": "loppterosauria:entities/land/pterosauria.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "loppterosauria"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/14/aitasks/-",
+    "value": {
+      "code": "simplecommand",
+      "command": "sit",
+      "priority": 2.2,
+      "priorityForCancel": 1.85,
+      "minduration": 10000,
+      "maxduration": 30000,
+      "animation": "sit"
+    },
+    "file": "loppterosauria:entities/land/pterosauria.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "loppterosauria"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/14/aitasks/-",
+    "value": {
+      "code": "simplecommand",
+      "command": "speak",
+      "priority": 2.2,
+      "priorityForCancel": 1.85,
+      "minduration": 3000,
+      "maxduration": 3000,
+      "animation": "call"
+    },
+    "file": "loppterosauria:entities/land/pterosauria.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "loppterosauria"
+      }
+    ]
+  }
+]

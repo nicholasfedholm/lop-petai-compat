@@ -1,0 +1,289 @@
+[
+  {
+    "op": "add",
+    "path": "/client/behaviors/-",
+    "value": {
+      "code": "nametag",
+      "showtagonlywhentargeted": true
+    },
+    "file": "macronaria:entities/land/macronaria.json",
+    "side": "Universal",
+    "dependsOn": [
+      {
+        "modid": "macronaria"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/client/behaviors/-",
+    "value": {
+      "code": "loptameable",
+      "size": "large",
+      "disobediencePerDay": 0
+    },
+    "file": "macronaria:entities/land/macronaria.json",
+    "side": "Universal",
+    "dependsOn": [
+      {
+        "modid": "macronaria"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/client/behaviors/-",
+    "value": {
+      "code": "receivecommand",
+      "availableCommands": [
+        {
+          "commandName": "followmaster",
+          "commandType": "COMPLEX",
+          "minObedience": 0
+        },
+        {
+          "commandName": "stay",
+          "commandType": "COMPLEX",
+          "minObedience": 0
+        },
+        {
+          "commandName": "sit",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        },
+        {
+          "commandName": "lay",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        },
+        {
+          "commandName": "speak",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        }
+      ]
+    },
+    "file": "macronaria:entities/land/macronaria.json",
+    "side": "Universal",
+    "dependsOn": [
+      {
+        "modid": "macronaria"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/-",
+    "value": {
+      "code": "nametag",
+      "showtagonlywhentargeted": true
+    },
+    "file": "macronaria:entities/land/macronaria.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "macronaria"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/-",
+    "value": {
+      "code": "loptameable",
+      "size": "large",
+      "disobediencePerDay": 0
+    },
+    "file": "macronaria:entities/land/macronaria.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "macronaria"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/-",
+    "value": {
+      "code": "receivecommand",
+      "availableCommands": [
+        {
+          "commandName": "followmaster",
+          "commandType": "COMPLEX",
+          "minObedience": 0
+        },
+        {
+          "commandName": "stay",
+          "commandType": "COMPLEX",
+          "minObedience": 0
+        },
+        {
+          "commandName": "sit",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        },
+        {
+          "commandName": "lay",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        },
+        {
+          "commandName": "speak",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        }
+      ]
+    },
+    "file": "macronaria:entities/land/macronaria.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "macronaria"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/15/aitasks/-",
+    "value": {
+      "code": "followmaster",
+      "command": "followmaster",
+      "priority": 2.1,
+      "maxDistance": 10,
+      "searchRange": 50,
+      "allowTeleport": true,
+      "teleportAfterRange": 40,
+      "movespeedByType": {
+        "*-camarasaurus-*": 0.03,
+        "*-malawisaurus-*": 0.035,
+        "*-rapetosaurus-*": 0.035,
+        "*-adult-*": 0.025
+      },
+      "animationSpeedByType": {
+        "*-camarasaurus-*": 2.5,
+        "*-malawisaurus-*": 2.5,
+        "*-rapetosaurus-*": 2.5,
+        "*": 2.5
+      },
+      "animationByType": {
+        "*-ampelosaurus-*": "Walk",
+        "*-antarctosaurus-*": "Walk",
+        "*-argentinosaurus-*": "Walk",
+        "*-brachiosaurus-*": "Walk",
+        "*-bruhathkayosaurus-*": "Walk",
+        "*-camarasaurus-*": "Walk",
+        "*-diamantinasaurus-*": "Walk",
+        "*-dreadnoughtus-*": "Walk",
+        "*-europatitan-*": "Walk",
+        "*-futalognkosaurus-*": "Walk",
+        "*-giraffatitan-*": "Walk",
+        "*-malawisaurus-*": "Walk",
+        "*-patagotitan-*": "Walk",
+        "*-rapetosaurus-*": "Walk",
+        "*-ruyangosaurus-*": "Walk",
+        "*": "Run"
+      }
+    },
+    "file": "macronaria:entities/land/macronaria.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "macronaria"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/15/aitasks/-",
+    "value": {
+      "code": "stay",
+      "command": "stay",
+      "priority": 2.05,
+      "priorityForCancel": 1.85,
+      "animation": "Walk",
+      "maxdistance": 6,
+      "searchRange": 50,
+      "movespeedByType": {
+        "*-camarasaurus-*": 0.02,
+        "*-malawisaurus-*": 0.023,
+        "*-rapetosaurus-*": 0.023,
+        "*-adult-*": 0.018,
+        "*-baby-*": 0.008
+      },
+      "animationSpeedByType": {
+        "*-camarasaurus-*": 2,
+        "*-malawisaurus-*": 2,
+        "*-rapetosaurus-*": 2,
+        "*": 2
+      }
+    },
+    "file": "macronaria:entities/land/macronaria.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "macronaria"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/15/aitasks/-",
+    "value": {
+      "code": "simplecommand",
+      "command": "sit",
+      "priority": 2.2,
+      "priorityForCancel": 1.85,
+      "minduration": 10000,
+      "maxduration": 30000,
+      "animation": "Sit"
+    },
+    "file": "macronaria:entities/land/macronaria.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "macronaria"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/15/aitasks/-",
+    "value": {
+      "code": "simplecommand",
+      "command": "lay",
+      "priority": 2.2,
+      "priorityForCancel": 1.85,
+      "minduration": 30000,
+      "maxduration": 120000,
+      "animation": "Lie"
+    },
+    "file": "macronaria:entities/land/macronaria.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "macronaria"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/15/aitasks/-",
+    "value": {
+      "code": "simplecommand",
+      "command": "speak",
+      "priority": 2.2,
+      "priorityForCancel": 1.85,
+      "minduration": 3000,
+      "maxduration": 3000,
+      "animation": "Roar"
+    },
+    "file": "macronaria:entities/land/macronaria.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "macronaria"
+      }
+    ]
+  }
+]

@@ -1,0 +1,285 @@
+[
+  {
+    "op": "add",
+    "path": "/client/behaviors/-",
+    "value": {
+      "code": "nametag",
+      "showtagonlywhentargeted": true
+    },
+    "file": "carcharodontosauridae:entities/land/carcharodontosauridae.json",
+    "side": "Universal",
+    "dependsOn": [
+      {
+        "modid": "carcharodontosauridae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/client/behaviors/-",
+    "value": {
+      "code": "loptameable",
+      "size": "large",
+      "disobediencePerDay": 0
+    },
+    "file": "carcharodontosauridae:entities/land/carcharodontosauridae.json",
+    "side": "Universal",
+    "dependsOn": [
+      {
+        "modid": "carcharodontosauridae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/client/behaviors/-",
+    "value": {
+      "code": "receivecommand",
+      "availableCommands": [
+        {
+          "commandName": "followmaster",
+          "commandType": "COMPLEX",
+          "minObedience": 0
+        },
+        {
+          "commandName": "stay",
+          "commandType": "COMPLEX",
+          "minObedience": 0
+        },
+        {
+          "commandName": "sit",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        },
+        {
+          "commandName": "lay",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        },
+        {
+          "commandName": "speak",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        }
+      ]
+    },
+    "file": "carcharodontosauridae:entities/land/carcharodontosauridae.json",
+    "side": "Universal",
+    "dependsOn": [
+      {
+        "modid": "carcharodontosauridae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/-",
+    "value": {
+      "code": "nametag",
+      "showtagonlywhentargeted": true
+    },
+    "file": "carcharodontosauridae:entities/land/carcharodontosauridae.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "carcharodontosauridae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/-",
+    "value": {
+      "code": "loptameable",
+      "size": "large",
+      "disobediencePerDay": 0
+    },
+    "file": "carcharodontosauridae:entities/land/carcharodontosauridae.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "carcharodontosauridae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/-",
+    "value": {
+      "code": "receivecommand",
+      "availableCommands": [
+        {
+          "commandName": "followmaster",
+          "commandType": "COMPLEX",
+          "minObedience": 0
+        },
+        {
+          "commandName": "stay",
+          "commandType": "COMPLEX",
+          "minObedience": 0
+        },
+        {
+          "commandName": "sit",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        },
+        {
+          "commandName": "lay",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        },
+        {
+          "commandName": "speak",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        }
+      ]
+    },
+    "file": "carcharodontosauridae:entities/land/carcharodontosauridae.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "carcharodontosauridae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/17/aitasks/-",
+    "value": {
+      "code": "followmaster",
+      "command": "followmaster",
+      "priority": 2.1,
+      "animation": "Run",
+      "maxDistance": 10,
+      "searchRange": 50,
+      "allowTeleport": true,
+      "teleportAfterRange": 40,
+      "movespeedByType": {
+        "*-baby-*": 0.035,
+        "*-giganotosaurus-adult-*": 0.065,
+        "*-carcharodontosaurus-adult-*": 0.066,
+        "*-mapusaurus-adult-*": 0.066,
+        "*-tyrannotitan-adult-*": 0.067,
+        "*-tameryraptor-adult-*": 0.071,
+        "*-veterupristisaurus-adult-*": 0.073,
+        "*-ulughbegsaurus-adult-*": 0.073,
+        "*-siamraptor-adult-*": 0.075,
+        "*-shaochilong-adult-*": 0.076,
+        "*-concavenator-adult-*": 0.076,
+        "*-lusovenator-adult-*": 0.08,
+        "*-lajasvenator-adult-*": 0.08
+      },
+      "animationSpeedByType": {
+        "*-baby-*": 2.5,
+        "*-adult-*": 2
+      }
+    },
+    "file": "carcharodontosauridae:entities/land/carcharodontosauridae.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "carcharodontosauridae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/17/aitasks/-",
+    "value": {
+      "code": "stay",
+      "command": "stay",
+      "priority": 2.05,
+      "priorityForCancel": 1.85,
+      "animation": "Walk",
+      "maxdistance": 6,
+      "searchRange": 50,
+      "movespeedByType": {
+        "*-baby-*": 0.008,
+        "*-giganotosaurus-adult-*": 0.03,
+        "*-carcharodontosaurus-adult-*": 0.028,
+        "*-mapusaurus-adult-*": 0.027,
+        "*-tyrannotitan-adult-*": 0.026,
+        "*-tameryraptor-adult-*": 0.02,
+        "*-veterupristisaurus-adult-*": 0.018,
+        "*-ulughbegsaurus-adult-*": 0.018,
+        "*-siamraptor-adult-*": 0.015,
+        "*-shaochilong-adult-*": 0.013,
+        "*-concavenator-adult-*": 0.013,
+        "*-lusovenator-adult-*": 0.01,
+        "*-lajasvenator-adult-*": 0.01
+      },
+      "animationSpeedByType": {
+        "*-adult-*": 1.5,
+        "*-baby-*": 2.25
+      }
+    },
+    "file": "carcharodontosauridae:entities/land/carcharodontosauridae.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "carcharodontosauridae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/17/aitasks/-",
+    "value": {
+      "code": "simplecommand",
+      "command": "sit",
+      "priority": 2.2,
+      "priorityForCancel": 1.85,
+      "minduration": 10000,
+      "maxduration": 30000,
+      "animation": "Sit"
+    },
+    "file": "carcharodontosauridae:entities/land/carcharodontosauridae.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "carcharodontosauridae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/17/aitasks/-",
+    "value": {
+      "code": "simplecommand",
+      "command": "lay",
+      "priority": 2.2,
+      "priorityForCancel": 1.85,
+      "minduration": 30000,
+      "maxduration": 120000,
+      "animation": "Lie"
+    },
+    "file": "carcharodontosauridae:entities/land/carcharodontosauridae.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "carcharodontosauridae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/17/aitasks/-",
+    "value": {
+      "code": "simplecommand",
+      "command": "speak",
+      "priority": 2.2,
+      "priorityForCancel": 1.85,
+      "minduration": 3000,
+      "maxduration": 3000,
+      "animation": "Roar"
+    },
+    "file": "carcharodontosauridae:entities/land/carcharodontosauridae.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "carcharodontosauridae"
+      }
+    ]
+  }
+]

@@ -1,0 +1,315 @@
+[
+  {
+    "op": "add",
+    "path": "/client/behaviors/-",
+    "value": {
+      "code": "nametag",
+      "showtagonlywhentargeted": true
+    },
+    "file": "dromaeosauridae:entities/land/dromaeosauridae.json",
+    "side": "Universal",
+    "dependsOn": [
+      {
+        "modid": "dromaeosauridae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/client/behaviors/-",
+    "value": {
+      "code": "loptameable",
+      "size": "large",
+      "disobediencePerDay": 0
+    },
+    "file": "dromaeosauridae:entities/land/dromaeosauridae.json",
+    "side": "Universal",
+    "dependsOn": [
+      {
+        "modid": "dromaeosauridae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/client/behaviors/-",
+    "value": {
+      "code": "receivecommand",
+      "availableCommands": [
+        {
+          "commandName": "followmaster",
+          "commandType": "COMPLEX",
+          "minObedience": 0
+        },
+        {
+          "commandName": "stay",
+          "commandType": "COMPLEX",
+          "minObedience": 0
+        },
+        {
+          "commandName": "sit",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        },
+        {
+          "commandName": "lay",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        },
+        {
+          "commandName": "speak",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        }
+      ]
+    },
+    "file": "dromaeosauridae:entities/land/dromaeosauridae.json",
+    "side": "Universal",
+    "dependsOn": [
+      {
+        "modid": "dromaeosauridae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/-",
+    "value": {
+      "code": "nametag",
+      "showtagonlywhentargeted": true
+    },
+    "file": "dromaeosauridae:entities/land/dromaeosauridae.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "dromaeosauridae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/-",
+    "value": {
+      "code": "loptameable",
+      "size": "large",
+      "disobediencePerDay": 0
+    },
+    "file": "dromaeosauridae:entities/land/dromaeosauridae.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "dromaeosauridae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/-",
+    "value": {
+      "code": "receivecommand",
+      "availableCommands": [
+        {
+          "commandName": "followmaster",
+          "commandType": "COMPLEX",
+          "minObedience": 0
+        },
+        {
+          "commandName": "stay",
+          "commandType": "COMPLEX",
+          "minObedience": 0
+        },
+        {
+          "commandName": "sit",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        },
+        {
+          "commandName": "lay",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        },
+        {
+          "commandName": "speak",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        }
+      ]
+    },
+    "file": "dromaeosauridae:entities/land/dromaeosauridae.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "dromaeosauridae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/17/aitasks/-",
+    "value": {
+      "code": "followmaster",
+      "command": "followmaster",
+      "priority": 2.1,
+      "animation": "Run",
+      "maxDistance": 10,
+      "searchRange": 50,
+      "allowTeleport": true,
+      "teleportAfterRange": 40,
+      "movespeedByType": {
+        "*-baby-*": 0.035,
+        "*-utahraptor-adult-*": 0.065,
+        "*-dakotaraptor-adult-*": 0.07,
+        "*-achillobator-adult-*": 0.07,
+        "*-austroraptor-adult-*": 0.07,
+        "*-deinonychus-adult-*": 0.07,
+        "*-dromaeosaurus-adult-*": 0.07,
+        "*-adasaurus-adult-*": 0.07,
+        "*-velociraptor-adult-*": 0.07,
+        "*-saurornitholestes-adult-*": 0.07,
+        "*-atrociraptor-adult-*": 0.07,
+        "*-pyroraptor-adult-*": 0.07,
+        "*-buitreraptor-adult-*": 0.07,
+        "*-microraptor-adult-*": 0.07,
+        "*-rahonavis-adult-*": 0.07
+      },
+      "animationSpeedByType": {
+        "*-baby-*": 2.5,
+        "*-utahraptor-adult-*": 3,
+        "*-dakotaraptor-adult-*": 3.25,
+        "*-achillobator-adult-*": 3.25,
+        "*-austroraptor-adult-*": 3.25,
+        "*-deinonychus-adult-*": 3.25,
+        "*-dromaeosaurus-adult-*": 3.25,
+        "*-adasaurus-adult-*": 3.25,
+        "*-velociraptor-adult-*": 3.25,
+        "*-saurornitholestes-adult-*": 3.25,
+        "*-atrociraptor-adult-*": 3.25,
+        "*-pyroraptor-adult-*": 3.25,
+        "*-buitreraptor-adult-*": 3.25,
+        "*-microraptor-adult-*": 3.25,
+        "*-rahonavis-adult-*": 3.25
+      }
+    },
+    "file": "dromaeosauridae:entities/land/dromaeosauridae.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "dromaeosauridae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/17/aitasks/-",
+    "value": {
+      "code": "stay",
+      "command": "stay",
+      "priority": 2.05,
+      "priorityForCancel": 1.85,
+      "animation": "Walk",
+      "maxdistance": 6,
+      "searchRange": 50,
+      "movespeedByType": {
+        "*-baby-*": 0.004,
+        "*-utahraptor-adult-*": 0.013,
+        "*-dakotaraptor-adult-*": 0.012,
+        "*-achillobator-adult-*": 0.011,
+        "*-austroraptor-adult-*": 0.01,
+        "*-deinonychus-adult-*": 0.01,
+        "*-dromaeosaurus-adult-*": 0.008,
+        "*-adasaurus-adult-*": 0.01,
+        "*-velociraptor-adult-*": 0.006,
+        "*-saurornitholestes-adult-*": 0.006,
+        "*-atrociraptor-adult-*": 0.006,
+        "*-pyroraptor-adult-*": 0.006,
+        "*-buitreraptor-adult-*": 0.006,
+        "*-microraptor-adult-*": 0.006,
+        "*-rahonavis-adult-*": 0.006
+      },
+      "animationSpeedByType": {
+        "*-baby-*": 2.25,
+        "*-utahraptor-adult-*": 1.0,
+        "*-dakotaraptor-adult-*": 1.0,
+        "*-achillobator-adult-*": 1.0,
+        "*-austroraptor-adult-*": 1.0,
+        "*-deinonychus-adult-*": 1.0,
+        "*-dromaeosaurus-adult-*": 1.0,
+        "*-adasaurus-adult-*": 1.0,
+        "*-velociraptor-adult-*": 1.0,
+        "*-saurornitholestes-adult-*": 1.0,
+        "*-atrociraptor-adult-*": 1.0,
+        "*-pyroraptor-adult-*": 1.0,
+        "*-buitreraptor-adult-*": 1.0,
+        "*-microraptor-adult-*": 1.0,
+        "*-rahonavis-adult-*": 1.0
+      }
+    },
+    "file": "dromaeosauridae:entities/land/dromaeosauridae.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "dromaeosauridae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/17/aitasks/-",
+    "value": {
+      "code": "simplecommand",
+      "command": "sit",
+      "priority": 2.2,
+      "priorityForCancel": 1.85,
+      "minduration": 10000,
+      "maxduration": 30000,
+      "animation": "Sit"
+    },
+    "file": "dromaeosauridae:entities/land/dromaeosauridae.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "dromaeosauridae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/17/aitasks/-",
+    "value": {
+      "code": "simplecommand",
+      "command": "lay",
+      "priority": 2.2,
+      "priorityForCancel": 1.85,
+      "minduration": 30000,
+      "maxduration": 120000,
+      "animation": "Lie"
+    },
+    "file": "dromaeosauridae:entities/land/dromaeosauridae.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "dromaeosauridae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/17/aitasks/-",
+    "value": {
+      "code": "simplecommand",
+      "command": "speak",
+      "priority": 2.2,
+      "priorityForCancel": 1.85,
+      "minduration": 3000,
+      "maxduration": 3000,
+      "animation": "Roar"
+    },
+    "file": "dromaeosauridae:entities/land/dromaeosauridae.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "dromaeosauridae"
+      }
+    ]
+  }
+]

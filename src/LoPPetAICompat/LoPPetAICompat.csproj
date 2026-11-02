@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <OutputPath>bin\$(Configuration)\Mods\mod</OutputPath>
+    <Nullable>disable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <VINTAGE_STORY Condition="'$(VINTAGE_STORY)' == ''">$(APPDATA)\Vintagestory</VINTAGE_STORY>
+    <PETAI_DLL Condition="'$(PETAI_DLL)' == ''">..\..\work\petai\PetAI.dll</PETAI_DLL>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="VintagestoryAPI"><HintPath>$(VINTAGE_STORY)\VintagestoryAPI.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="VSEssentials"><HintPath>$(VINTAGE_STORY)\Mods\VSEssentials.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="VSSurvivalMod"><HintPath>$(VINTAGE_STORY)\Mods\VSSurvivalMod.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="PetAI"><HintPath>$(PETAI_DLL)</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="modinfo.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="assets\**" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

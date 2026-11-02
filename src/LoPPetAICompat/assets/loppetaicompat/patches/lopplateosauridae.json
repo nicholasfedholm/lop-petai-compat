@@ -1,0 +1,272 @@
+[
+  {
+    "op": "add",
+    "path": "/client/behaviors/-",
+    "value": {
+      "code": "nametag",
+      "showtagonlywhentargeted": true
+    },
+    "file": "lopplateosauridae:entities/land/plateosauridae.json",
+    "side": "Universal",
+    "dependsOn": [
+      {
+        "modid": "lopplateosauridae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/client/behaviors/-",
+    "value": {
+      "code": "loptameable",
+      "size": "large",
+      "disobediencePerDay": 0
+    },
+    "file": "lopplateosauridae:entities/land/plateosauridae.json",
+    "side": "Universal",
+    "dependsOn": [
+      {
+        "modid": "lopplateosauridae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/client/behaviors/-",
+    "value": {
+      "code": "receivecommand",
+      "availableCommands": [
+        {
+          "commandName": "followmaster",
+          "commandType": "COMPLEX",
+          "minObedience": 0
+        },
+        {
+          "commandName": "stay",
+          "commandType": "COMPLEX",
+          "minObedience": 0
+        },
+        {
+          "commandName": "sit",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        },
+        {
+          "commandName": "lay",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        },
+        {
+          "commandName": "speak",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        }
+      ]
+    },
+    "file": "lopplateosauridae:entities/land/plateosauridae.json",
+    "side": "Universal",
+    "dependsOn": [
+      {
+        "modid": "lopplateosauridae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/-",
+    "value": {
+      "code": "nametag",
+      "showtagonlywhentargeted": true
+    },
+    "file": "lopplateosauridae:entities/land/plateosauridae.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "lopplateosauridae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/-",
+    "value": {
+      "code": "loptameable",
+      "size": "large",
+      "disobediencePerDay": 0
+    },
+    "file": "lopplateosauridae:entities/land/plateosauridae.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "lopplateosauridae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/-",
+    "value": {
+      "code": "receivecommand",
+      "availableCommands": [
+        {
+          "commandName": "followmaster",
+          "commandType": "COMPLEX",
+          "minObedience": 0
+        },
+        {
+          "commandName": "stay",
+          "commandType": "COMPLEX",
+          "minObedience": 0
+        },
+        {
+          "commandName": "sit",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        },
+        {
+          "commandName": "lay",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        },
+        {
+          "commandName": "speak",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        }
+      ]
+    },
+    "file": "lopplateosauridae:entities/land/plateosauridae.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "lopplateosauridae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/12/aitasks/-",
+    "value": {
+      "code": "followmaster",
+      "command": "followmaster",
+      "priority": 2.1,
+      "maxDistance": 10,
+      "searchRange": 50,
+      "allowTeleport": true,
+      "teleportAfterRange": 40,
+      "movespeedByType": {
+        "*-plateosaurus-*": 0.0525,
+        "*-massospondylus-*": 0.0595,
+        "*-adult-*": 0.025
+      },
+      "animationSpeedByType": {
+        "*-plateosaurus-*": 2.5,
+        "*-massospondylus-*": 2.5,
+        "*": 2.5
+      },
+      "animationByType": {
+        "*-massospondylus-*": "Walk",
+        "*-plateosaurus-*": "Walk",
+        "*": "Run"
+      }
+    },
+    "file": "lopplateosauridae:entities/land/plateosauridae.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "lopplateosauridae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/12/aitasks/-",
+    "value": {
+      "code": "stay",
+      "command": "stay",
+      "priority": 2.05,
+      "priorityForCancel": 1.85,
+      "animation": "Walk",
+      "maxdistance": 6,
+      "searchRange": 50,
+      "movespeedByType": {
+        "*-plateosaurus-*": 0.0345,
+        "*-massospondylus-*": 0.0391,
+        "*-adult-*": 0.018,
+        "*-baby-*": 0.008
+      },
+      "animationSpeedByType": {
+        "*-plateosaurus-*": 2,
+        "*-massospondylus-*": 2,
+        "*": 2
+      }
+    },
+    "file": "lopplateosauridae:entities/land/plateosauridae.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "lopplateosauridae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/12/aitasks/-",
+    "value": {
+      "code": "simplecommand",
+      "command": "sit",
+      "priority": 2.2,
+      "priorityForCancel": 1.85,
+      "minduration": 10000,
+      "maxduration": 30000,
+      "animation": "Sit"
+    },
+    "file": "lopplateosauridae:entities/land/plateosauridae.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "lopplateosauridae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/12/aitasks/-",
+    "value": {
+      "code": "simplecommand",
+      "command": "lay",
+      "priority": 2.2,
+      "priorityForCancel": 1.85,
+      "minduration": 30000,
+      "maxduration": 120000,
+      "animation": "Lie"
+    },
+    "file": "lopplateosauridae:entities/land/plateosauridae.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "lopplateosauridae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/12/aitasks/-",
+    "value": {
+      "code": "simplecommand",
+      "command": "speak",
+      "priority": 2.2,
+      "priorityForCancel": 1.85,
+      "minduration": 3000,
+      "maxduration": 3000,
+      "animation": "Roar"
+    },
+    "file": "lopplateosauridae:entities/land/plateosauridae.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "lopplateosauridae"
+      }
+    ]
+  }
+]

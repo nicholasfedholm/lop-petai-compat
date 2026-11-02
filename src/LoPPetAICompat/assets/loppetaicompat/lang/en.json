@@ -1,0 +1,9 @@
+{
+  "message-bonded": "{0} has bonded with you. Ctrl + Shift + right click it for pet commands (plain right click mounts).",
+  "info-bondable": "Domesticated (LoP): Ctrl + right click with its food, or stand near it and type /lopbond, to bond",
+  "cmd-look-at-dino": "No unbonded, LoP-domesticated dinosaur within 6 blocks.",
+  "cmd-dead": "It is dead.",
+  "cmd-not-tame": "Not domesticated yet by LoP rules: generation {0}, needs {1} (and an adult).",
+  "cmd-already-yours": "Already bonded to you.",
+  "cmd-owned": "Already bonded to another player."
+}

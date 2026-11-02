@@ -1,0 +1,281 @@
+[
+  {
+    "op": "add",
+    "path": "/client/behaviors/-",
+    "value": {
+      "code": "nametag",
+      "showtagonlywhentargeted": true
+    },
+    "file": "therizinosauridae:entities/land/therizinosauridae.json",
+    "side": "Universal",
+    "dependsOn": [
+      {
+        "modid": "therizinosauridae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/client/behaviors/-",
+    "value": {
+      "code": "loptameable",
+      "size": "large",
+      "disobediencePerDay": 0
+    },
+    "file": "therizinosauridae:entities/land/therizinosauridae.json",
+    "side": "Universal",
+    "dependsOn": [
+      {
+        "modid": "therizinosauridae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/client/behaviors/-",
+    "value": {
+      "code": "receivecommand",
+      "availableCommands": [
+        {
+          "commandName": "followmaster",
+          "commandType": "COMPLEX",
+          "minObedience": 0
+        },
+        {
+          "commandName": "stay",
+          "commandType": "COMPLEX",
+          "minObedience": 0
+        },
+        {
+          "commandName": "sit",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        },
+        {
+          "commandName": "lay",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        },
+        {
+          "commandName": "speak",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        }
+      ]
+    },
+    "file": "therizinosauridae:entities/land/therizinosauridae.json",
+    "side": "Universal",
+    "dependsOn": [
+      {
+        "modid": "therizinosauridae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/-",
+    "value": {
+      "code": "nametag",
+      "showtagonlywhentargeted": true
+    },
+    "file": "therizinosauridae:entities/land/therizinosauridae.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "therizinosauridae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/-",
+    "value": {
+      "code": "loptameable",
+      "size": "large",
+      "disobediencePerDay": 0
+    },
+    "file": "therizinosauridae:entities/land/therizinosauridae.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "therizinosauridae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/-",
+    "value": {
+      "code": "receivecommand",
+      "availableCommands": [
+        {
+          "commandName": "followmaster",
+          "commandType": "COMPLEX",
+          "minObedience": 0
+        },
+        {
+          "commandName": "stay",
+          "commandType": "COMPLEX",
+          "minObedience": 0
+        },
+        {
+          "commandName": "sit",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        },
+        {
+          "commandName": "lay",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        },
+        {
+          "commandName": "speak",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        }
+      ]
+    },
+    "file": "therizinosauridae:entities/land/therizinosauridae.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "therizinosauridae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/17/aitasks/-",
+    "value": {
+      "code": "followmaster",
+      "command": "followmaster",
+      "priority": 2.1,
+      "animation": "Run",
+      "maxDistance": 10,
+      "searchRange": 50,
+      "allowTeleport": true,
+      "teleportAfterRange": 40,
+      "movespeedByType": {
+        "*-baby-*": 0.01,
+        "*-therizinosaurus-adult-*": 0.035,
+        "*-segnosaurus-adult-*": 0.0362,
+        "*-suzhousaurus-adult-*": 0.0385,
+        "*-nothronychus-adult-*": 0.0408,
+        "*-alxasaurus-adult-*": 0.0411,
+        "*-falcarius-adult-*": 0.042,
+        "*-erliansaurus-adult-*": 0.0432,
+        "*-jianchangosaurus-adult-*": 0.0441,
+        "*-beipiaosaurus-adult-*": 0.0438,
+        "*-neimongosaurus-adult-*": 0.0443
+      },
+      "animationSpeedByType": {
+        "*-baby-*": 1.5,
+        "*": 1.5
+      }
+    },
+    "file": "therizinosauridae:entities/land/therizinosauridae.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "therizinosauridae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/17/aitasks/-",
+    "value": {
+      "code": "stay",
+      "command": "stay",
+      "priority": 2.05,
+      "priorityForCancel": 1.85,
+      "animation": "Walk",
+      "maxdistance": 6,
+      "searchRange": 50,
+      "movespeedByType": {
+        "*-baby-*": 0.0012,
+        "*-therizinosaurus-adult-*": 0.02,
+        "*-segnosaurus-adult-*": 0.018,
+        "*-suzhousaurus-adult-*": 0.014,
+        "*-nothronychus-adult-*": 0.01,
+        "*-alxasaurus-adult-*": 0.0096,
+        "*-falcarius-adult-*": 0.008,
+        "*-erliansaurus-adult-*": 0.006,
+        "*-jianchangosaurus-adult-*": 0.0044,
+        "*-beipiaosaurus-adult-*": 0.005,
+        "*-neimongosaurus-adult-*": 0.004
+      },
+      "animationSpeedByType": {
+        "*-baby-*": 1,
+        "*-adult-*": 1
+      }
+    },
+    "file": "therizinosauridae:entities/land/therizinosauridae.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "therizinosauridae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/17/aitasks/-",
+    "value": {
+      "code": "simplecommand",
+      "command": "sit",
+      "priority": 2.2,
+      "priorityForCancel": 1.85,
+      "minduration": 10000,
+      "maxduration": 30000,
+      "animation": "Sit"
+    },
+    "file": "therizinosauridae:entities/land/therizinosauridae.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "therizinosauridae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/17/aitasks/-",
+    "value": {
+      "code": "simplecommand",
+      "command": "lay",
+      "priority": 2.2,
+      "priorityForCancel": 1.85,
+      "minduration": 30000,
+      "maxduration": 120000,
+      "animation": "Lie"
+    },
+    "file": "therizinosauridae:entities/land/therizinosauridae.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "therizinosauridae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/17/aitasks/-",
+    "value": {
+      "code": "simplecommand",
+      "command": "speak",
+      "priority": 2.2,
+      "priorityForCancel": 1.85,
+      "minduration": 3000,
+      "maxduration": 3000,
+      "animation": "Roar"
+    },
+    "file": "therizinosauridae:entities/land/therizinosauridae.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "therizinosauridae"
+      }
+    ]
+  }
+]

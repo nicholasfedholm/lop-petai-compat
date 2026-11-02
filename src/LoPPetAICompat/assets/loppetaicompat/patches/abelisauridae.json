@@ -1,0 +1,277 @@
+[
+  {
+    "op": "add",
+    "path": "/client/behaviors/-",
+    "value": {
+      "code": "nametag",
+      "showtagonlywhentargeted": true
+    },
+    "file": "abelisauridae:entities/land/abelisauridae.json",
+    "side": "Universal",
+    "dependsOn": [
+      {
+        "modid": "abelisauridae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/client/behaviors/-",
+    "value": {
+      "code": "loptameable",
+      "size": "large",
+      "disobediencePerDay": 0
+    },
+    "file": "abelisauridae:entities/land/abelisauridae.json",
+    "side": "Universal",
+    "dependsOn": [
+      {
+        "modid": "abelisauridae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/client/behaviors/-",
+    "value": {
+      "code": "receivecommand",
+      "availableCommands": [
+        {
+          "commandName": "followmaster",
+          "commandType": "COMPLEX",
+          "minObedience": 0
+        },
+        {
+          "commandName": "stay",
+          "commandType": "COMPLEX",
+          "minObedience": 0
+        },
+        {
+          "commandName": "sit",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        },
+        {
+          "commandName": "lay",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        },
+        {
+          "commandName": "speak",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        }
+      ]
+    },
+    "file": "abelisauridae:entities/land/abelisauridae.json",
+    "side": "Universal",
+    "dependsOn": [
+      {
+        "modid": "abelisauridae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/-",
+    "value": {
+      "code": "nametag",
+      "showtagonlywhentargeted": true
+    },
+    "file": "abelisauridae:entities/land/abelisauridae.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "abelisauridae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/-",
+    "value": {
+      "code": "loptameable",
+      "size": "large",
+      "disobediencePerDay": 0
+    },
+    "file": "abelisauridae:entities/land/abelisauridae.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "abelisauridae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/-",
+    "value": {
+      "code": "receivecommand",
+      "availableCommands": [
+        {
+          "commandName": "followmaster",
+          "commandType": "COMPLEX",
+          "minObedience": 0
+        },
+        {
+          "commandName": "stay",
+          "commandType": "COMPLEX",
+          "minObedience": 0
+        },
+        {
+          "commandName": "sit",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        },
+        {
+          "commandName": "lay",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        },
+        {
+          "commandName": "speak",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        }
+      ]
+    },
+    "file": "abelisauridae:entities/land/abelisauridae.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "abelisauridae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/17/aitasks/-",
+    "value": {
+      "code": "followmaster",
+      "command": "followmaster",
+      "priority": 2.1,
+      "animation": "Run",
+      "maxDistance": 10,
+      "searchRange": 50,
+      "allowTeleport": true,
+      "teleportAfterRange": 40,
+      "movespeedByType": {
+        "*-baby-*": 0.035,
+        "*-pycnonemosaurus-adult-*": 0.07,
+        "*-ekrixinatosaurus-adult-*": 0.0714,
+        "*-carnotaurus-adult-*": 0.07,
+        "*-chenanisaurus-adult-*": 0.0726,
+        "*-rajasaurus-adult-*": 0.074,
+        "*-abelisaurus-adult-*": 0.0751,
+        "*-majungasaurus-adult-*": 0.0751,
+        "*-skorpiovenator-adult-*": 0.0765,
+        "*-xenotarsosaurus-adult-*": 0.0765,
+        "*-arcovenator-adult-*": 0.0777,
+        "*-aucasaurus-adult-*": 0.0791,
+        "*-ilokelesia-adult-*": 0.0803,
+        "*-viavenator-adult-*": 0.0803,
+        "*-tarascosaurus-adult-*": 0.0856,
+        "*-thanos-adult-*": 0.0868
+      },
+      "animationSpeedByType": {
+        "*-baby-*": 2.5,
+        "*-adult-*": 1.7
+      }
+    },
+    "file": "abelisauridae:entities/land/abelisauridae.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "abelisauridae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/17/aitasks/-",
+    "value": {
+      "code": "stay",
+      "command": "stay",
+      "priority": 2.05,
+      "priorityForCancel": 1.85,
+      "animation": "Walk",
+      "maxdistance": 6,
+      "searchRange": 50,
+      "movespeedByType": {
+        "*-baby-*": 0.008,
+        "*-adult-*": 0.02
+      },
+      "animationSpeedByType": {
+        "*-adult-*": 1.5,
+        "*-baby-*": 2.25
+      }
+    },
+    "file": "abelisauridae:entities/land/abelisauridae.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "abelisauridae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/17/aitasks/-",
+    "value": {
+      "code": "simplecommand",
+      "command": "sit",
+      "priority": 2.2,
+      "priorityForCancel": 1.85,
+      "minduration": 10000,
+      "maxduration": 30000,
+      "animation": "Sit"
+    },
+    "file": "abelisauridae:entities/land/abelisauridae.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "abelisauridae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/17/aitasks/-",
+    "value": {
+      "code": "simplecommand",
+      "command": "lay",
+      "priority": 2.2,
+      "priorityForCancel": 1.85,
+      "minduration": 30000,
+      "maxduration": 120000,
+      "animation": "Lie"
+    },
+    "file": "abelisauridae:entities/land/abelisauridae.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "abelisauridae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/17/aitasks/-",
+    "value": {
+      "code": "simplecommand",
+      "command": "speak",
+      "priority": 2.2,
+      "priorityForCancel": 1.85,
+      "minduration": 3000,
+      "maxduration": 3000,
+      "animation": "Roar"
+    },
+    "file": "abelisauridae:entities/land/abelisauridae.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "abelisauridae"
+      }
+    ]
+  }
+]

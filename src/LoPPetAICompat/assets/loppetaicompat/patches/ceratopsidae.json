@@ -1,0 +1,283 @@
+[
+  {
+    "op": "add",
+    "path": "/client/behaviors/-",
+    "value": {
+      "code": "nametag",
+      "showtagonlywhentargeted": true
+    },
+    "file": "ceratopsidae:entities/land/ceratopsidae.json",
+    "side": "Universal",
+    "dependsOn": [
+      {
+        "modid": "ceratopsidae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/client/behaviors/-",
+    "value": {
+      "code": "loptameable",
+      "size": "large",
+      "disobediencePerDay": 0
+    },
+    "file": "ceratopsidae:entities/land/ceratopsidae.json",
+    "side": "Universal",
+    "dependsOn": [
+      {
+        "modid": "ceratopsidae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/client/behaviors/-",
+    "value": {
+      "code": "receivecommand",
+      "availableCommands": [
+        {
+          "commandName": "followmaster",
+          "commandType": "COMPLEX",
+          "minObedience": 0
+        },
+        {
+          "commandName": "stay",
+          "commandType": "COMPLEX",
+          "minObedience": 0
+        },
+        {
+          "commandName": "sit",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        },
+        {
+          "commandName": "lay",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        },
+        {
+          "commandName": "speak",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        }
+      ]
+    },
+    "file": "ceratopsidae:entities/land/ceratopsidae.json",
+    "side": "Universal",
+    "dependsOn": [
+      {
+        "modid": "ceratopsidae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/-",
+    "value": {
+      "code": "nametag",
+      "showtagonlywhentargeted": true
+    },
+    "file": "ceratopsidae:entities/land/ceratopsidae.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "ceratopsidae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/-",
+    "value": {
+      "code": "loptameable",
+      "size": "large",
+      "disobediencePerDay": 0
+    },
+    "file": "ceratopsidae:entities/land/ceratopsidae.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "ceratopsidae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/-",
+    "value": {
+      "code": "receivecommand",
+      "availableCommands": [
+        {
+          "commandName": "followmaster",
+          "commandType": "COMPLEX",
+          "minObedience": 0
+        },
+        {
+          "commandName": "stay",
+          "commandType": "COMPLEX",
+          "minObedience": 0
+        },
+        {
+          "commandName": "sit",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        },
+        {
+          "commandName": "lay",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        },
+        {
+          "commandName": "speak",
+          "commandType": "SIMPLE",
+          "minObedience": 0
+        }
+      ]
+    },
+    "file": "ceratopsidae:entities/land/ceratopsidae.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "ceratopsidae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/17/aitasks/-",
+    "value": {
+      "code": "followmaster",
+      "command": "followmaster",
+      "priority": 2.1,
+      "maxDistance": 10,
+      "searchRange": 50,
+      "allowTeleport": true,
+      "teleportAfterRange": 40,
+      "movespeedByType": {
+        "*-adult-*": 0.045,
+        "*-baby-*": 0.0385
+      },
+      "animationSpeedByType": {
+        "*-baby-*": 5,
+        "*": 4.5
+      },
+      "animationByType": {
+        "*-ajkaceratops-*": "Graze",
+        "*-centrosaurus-*": "Graze",
+        "*-leptoceratops-*": "Graze",
+        "*-machairoceratops-*": "Graze",
+        "*-nasutoceratops-*": "Graze",
+        "*-nedoceratops-*": "Graze",
+        "*-pachyrhinosaurus-*": "Graze",
+        "*-pentaceratops-*": "Graze",
+        "*-protoceratops-*": "Graze",
+        "*-regaliceratops-*": "Graze",
+        "*-sinoceratops-*": "Graze",
+        "*-styracosaurus-*": "Graze",
+        "*-torosaurus-*": "Graze",
+        "*-triceratops-*": "Graze",
+        "*-xenoceratops-*": "Graze",
+        "*": "Run"
+      }
+    },
+    "file": "ceratopsidae:entities/land/ceratopsidae.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "ceratopsidae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/17/aitasks/-",
+    "value": {
+      "code": "stay",
+      "command": "stay",
+      "priority": 2.05,
+      "priorityForCancel": 1.85,
+      "animation": "Graze",
+      "maxdistance": 6,
+      "searchRange": 50,
+      "movespeedByType": {
+        "*-leptoceratops-*": 0.003,
+        "*-protoceratops-*": 0.003,
+        "*-ajkaceratops-*": 0.003,
+        "*-adult-*": 0.0045,
+        "*-baby-*": 0.003
+      },
+      "animationSpeedByType": {
+        "*-baby-*": 1,
+        "*": 1
+      }
+    },
+    "file": "ceratopsidae:entities/land/ceratopsidae.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "ceratopsidae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/17/aitasks/-",
+    "value": {
+      "code": "simplecommand",
+      "command": "sit",
+      "priority": 2.2,
+      "priorityForCancel": 1.85,
+      "minduration": 10000,
+      "maxduration": 30000,
+      "animation": "Sit"
+    },
+    "file": "ceratopsidae:entities/land/ceratopsidae.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "ceratopsidae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/17/aitasks/-",
+    "value": {
+      "code": "simplecommand",
+      "command": "lay",
+      "priority": 2.2,
+      "priorityForCancel": 1.85,
+      "minduration": 30000,
+      "maxduration": 120000,
+      "animation": "Lie"
+    },
+    "file": "ceratopsidae:entities/land/ceratopsidae.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "ceratopsidae"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/17/aitasks/-",
+    "value": {
+      "code": "simplecommand",
+      "command": "speak",
+      "priority": 2.2,
+      "priorityForCancel": 1.85,
+      "minduration": 3000,
+      "maxduration": 3000,
+      "animation": "Roar"
+    },
+    "file": "ceratopsidae:entities/land/ceratopsidae.json",
+    "side": "Server",
+    "dependsOn": [
+      {
+        "modid": "ceratopsidae"
+      }
+    ]
+  }
+]

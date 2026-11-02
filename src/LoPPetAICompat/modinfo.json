@@ -1,0 +1,15 @@
+{
+  "type": "code",
+  "modid": "loppetaicompat",
+  "name": "LoP PetAI Compat",
+  "authors": [ "Nick" ],
+  "description": "Optional PetAI layer for Legacy of the Phanerozoic dinosaurs. LoP's generational domestication decides when a dino is tame; PetAI then adds bonding (one hand-feed or /lopbond), naming, follow/stay/sit/lie/roar commands and follow-teleport. Requires PetAI and the LoP family mods it patches.",
+  "version": "0.1.0",
+  "side": "Universal",
+  "requiredOnClient": true,
+  "requiredOnServer": true,
+  "dependencies": {
+    "game": "1.22.7",
+    "petai": "5.1.2"
+  }
+}
